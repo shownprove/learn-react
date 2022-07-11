@@ -6,15 +6,24 @@ const Square = styled.div`
   height: 100px;
 `;
 
-const Circle = styled(Square)`
-  border-radius: 50px;
+const Diamond = styled(Square).attrs({ value: "yes" })`
+  transform: rotate(45deg);
+  margin: 20px;
 `;
 
 function App() {
   return (
     <div>
-      <Square color="blue" />
-      <Circle color="red" />
+      <Diamond color="red" as="button" />
+      <Diamond color="red" as="button" />
+      <Diamond color="red" as="button" />
+      <Diamond color="red" as="button" />
+      <Diamond color="red" as="button" />
+      <Diamond color="red" as="button" />
+      <Diamond color="red" as="button" />
+      <Diamond color="red" as="button" />
+      <Diamond color="red" as="button" />
+      <Diamond color="red" as="button" />
     </div>
   );
 }
